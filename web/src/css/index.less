@@ -1,0 +1,47 @@
+// 重置浏览器样式
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+// 公共样式
+.fd-icon {
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 100%;
+        background-color: currentColor;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 24px 24px;
+        vertical-align: middle;
+    }
+}
+
+.fd-input {
+    height: 28px;
+    padding: 0 10px;
+    border: 1px solid #cfd3d4;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.fd-btn {
+    border: none;
+    outline: none;
+    background: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+}

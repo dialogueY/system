@@ -1,0 +1,94 @@
+.fd-win-box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.fd-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.fd-win-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 500px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+
+.fd-win-header {
+    padding: 0 10px;
+    line-height: 40px;
+    border-bottom: 1px solid #d7d8d9;
+    font-size: 16px;
+    font-weight: bold;
+
+    .fd-close-win {
+        float: right;
+        width: 20px;
+        text-align: center;
+        font-weight: normal;
+        color: #c8c8c9;
+    }
+}
+
+.fd-win-content {
+    padding: 0 10px;
+
+    .fd-label {
+        padding-top: 6px;
+        line-height: 28px;
+        font-size: 13px;
+
+        &.required::before {
+            content: "*";
+            margin-right: 5px;
+            color: red;
+        }
+    }
+
+    .fd-input {
+        width: 100%;
+    }
+
+    .fd-icon-tag {
+        display: inline-block;
+        width: 12px;
+        height: 26px;
+        margin-right: 4px;
+        cursor: pointer;
+
+        &::before {
+            width: 12px;
+            mask-image: url(../../assets/images/ESM@iconset_info2.svg);
+            mask-size: 16px 16px;
+            background-color: #ff8d57;
+        }
+    }
+}
+
+.fd-win-footer {
+    padding: 10px;
+    text-align: right;
+
+    .fd-btn-cancle {
+        margin-right: 8px;
+        color: #3561f4;
+    }
+
+    .fd-btn-submit {
+        padding: 4px 5px;
+        background-color: #3561f4;
+        color: #fff;
+        border-radius: 2px;
+    }
+}

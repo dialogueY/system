@@ -1,0 +1,149 @@
+.fd-page-main {
+    height: 100%;
+    padding: 10px 20px;
+    flex: 1;
+    overflow: hidden;
+}
+
+// 上面部分
+.fd-top {
+    overflow: hidden;
+}
+
+.fd-title {
+    float: left;
+}
+
+.fd-top-right {
+    float: right;
+
+    .fd-search-box {
+        position: relative;
+        display: inline-block;
+        height: 28px;
+
+        &::before {
+            position: absolute;
+            left: 5px;
+            mask-image: url(../../assets/images/ESM@iconset_Search.svg);
+            mask-position: center 1px;
+            background-color: #939da3;
+        }
+
+        .fd-input {
+            width: 320px;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.fd-btn-add {
+    width: 104px;
+    height: 28px;
+    margin-left: 8px;
+    border-radius: 2px;
+    background-color: #44b539;
+    color: #fff;
+
+    &::before {
+        mask-image: url(../../assets/images/ESM@iconset_New.svg);
+        mask-position: center 1px;
+    }
+}
+
+.fd-list-box {
+    height: calc(100% - 40px);
+}
+
+.fd-list-scroll {
+    position: relative;
+    max-height: calc(100% - 80px);
+    overflow: auto;
+}
+
+.fd-list-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.fd-list-item {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d7d8d9;
+    list-style: none;
+    color: #434e56;
+    box-sizing: border-box;
+
+    &:nth-child(even) {
+        background-color: #f7f8f9;
+    }
+}
+
+.fd-list-header {
+    padding-top: 6px;
+    line-height: 34px;
+}
+
+.fd-list-text {
+    display: inline-block;
+    width: 21%;
+    padding: 0 10px;
+    font-size: 14px;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    &.fd-w15 {
+        width: 15%;
+    }
+
+    &.fd-w10 {
+        width: 10%;
+    }
+
+    &.fd-center {
+        text-align: center;
+    }
+
+    .fd-blue {
+        color: #3561f4;
+
+        &::before {
+            margin-right: 10px;
+            content: "</>";
+        }
+    }
+
+    .fd-tag {
+        display: inline-block;
+        padding: 0 5px;
+        margin-right: 4px;
+        line-height: 24px;
+        background-color: #eaebec;
+        border-radius: 2px;
+    }
+}
+
+.fd-delete-icon,
+.fd-edit-icon {
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    color: #333f48;
+    cursor: pointer;
+
+    &::before {
+        mask-image: url(../../assets/images/ESM@iconset_Edit.svg);
+        mask-position: center;
+    } 
+}
+
+.fd-delete-icon::before {
+    mask-image: url(../../assets/images/ESM@iconset_Delete.svg);
+}
+
+.fd-pl10 {
+    padding-left: 10px;
+}

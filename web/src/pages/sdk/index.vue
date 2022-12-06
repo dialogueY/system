@@ -3,13 +3,11 @@
         <!-- 查询条件 开始 -->
         <div class="fd-top">
             <!-- 标题 -->
-            <h4>{{name}}</h4>
+            <h4 class="fd-title">{{name}}</h4>
             <!-- 右边搜索部分 -->
             <div class="fd-top-right">
                 <!-- 搜索框 -->
-                <div class="fd-search-box">
-                    <img src="../../assets/images/ESM@iconset_Search.svg"
-                    class="fd-search-icon">
+                <div class="fd-search-box fd-icon">
                     <input class="fd-input"
                             type="text"
                             v-model="searchText"

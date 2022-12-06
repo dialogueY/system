@@ -109,8 +109,12 @@ export default {
         },
         openWin(data,index){
             if(data){
+                this.winTitle = 'Edit SDk';
                 this.editData = data;
                 this.editIndex = index;
+            }else {
+                this.winTitle = 'Create SDk';
+                this.editData = null;
             }
             this.showWin = true;
         },
